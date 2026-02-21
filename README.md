@@ -1,2 +1,2 @@
 # Astral
-Astral related stuff including the hyperlink
+Astral related stuff including the hyperlink and more
