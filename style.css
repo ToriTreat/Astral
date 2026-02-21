@@ -43,7 +43,7 @@ header::before {
     transform: translateX(-50%);
     width: 200px;
     height: 4px;
-    background: linear-gradient(90deg, transparent, #9d4edd, #c77dff, #9d4edd, transparent);
+    background: linear-gradient(90deg, transparent, #ffffff, #e0e0e0, #ffffff, transparent);
     border-radius: 2px;
     animation: headerGlow 3s ease-in-out infinite;
 }
@@ -57,15 +57,15 @@ header::before {
     font-family: 'Orbitron', monospace;
     font-size: 4rem;
     font-weight: 900;
-    background: linear-gradient(45deg, #9d4edd, #c77dff, #ffffff, #9d4edd);
+    background: linear-gradient(45deg, #ffffff, #e0e0e0, #ffffff, #cccccc);
     background-size: 300% 300%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-shadow: 
-        0 0 5px rgba(157, 78, 221, 0.4),
-        0 0 10px rgba(157, 78, 221, 0.3),
-        0 0 15px rgba(157, 78, 221, 0.2);
+        0 0 5px rgba(255, 255, 255, 0.4),
+        0 0 10px rgba(255, 255, 255, 0.3),
+        0 0 15px rgba(255, 255, 255, 0.2);
     margin-bottom: 20px;
     animation: 
         gradientShift 4s ease infinite,
@@ -79,28 +79,28 @@ header::before {
 @keyframes textGlow {
     0% {
         text-shadow: 
-            0 0 10px rgba(157, 78, 221, 0.8),
-            0 0 20px rgba(157, 78, 221, 0.6),
-            0 0 30px rgba(157, 78, 221, 0.4);
+            0 0 10px rgba(255, 255, 255, 0.8),
+            0 0 20px rgba(255, 255, 255, 0.6),
+            0 0 30px rgba(255, 255, 255, 0.4);
     }
     100% {
         text-shadow: 
-            0 0 20px rgba(157, 78, 221, 1),
-            0 0 30px rgba(157, 78, 221, 0.8),
-            0 0 40px rgba(157, 78, 221, 0.6),
-            0 0 50px rgba(157, 78, 221, 0.4);
+            0 0 20px rgba(255, 255, 255, 1),
+            0 0 30px rgba(255, 255, 255, 0.8),
+            0 0 40px rgba(255, 255, 255, 0.6),
+            0 0 50px rgba(255, 255, 255, 0.4);
     }
 }
 
 
 .creator {
     font-family: 'Exo 2', sans-serif;
-    color: #c77dff;
+    color: #ffffff;
     font-size: 1.4rem;
     font-weight: 300;
     text-shadow: 
-        0 0 10px rgba(199, 125, 255, 0.8),
-        0 0 20px rgba(199, 125, 255, 0.4);
+        0 0 10px rgba(255, 255, 255, 0.8),
+        0 0 20px rgba(255, 255, 255, 0.4);
     letter-spacing: 1px;
     animation: creatorGlow 4s ease-in-out infinite alternate;
     position: relative;
@@ -113,7 +113,7 @@ header::before {
     top: 50%;
     transform: translateY(-50%);
     font-size: 0.8rem;
-    color: rgba(199, 125, 255, 0.6);
+    color: rgba(255, 255, 255, 0.6);
     animation: fadeInOut 3s ease-in-out infinite;
 }
 
@@ -129,11 +129,11 @@ header::before {
 
 .generator-box {
     background: #000000;
-    border: 2px solid #9d4edd;
+    border: 2px solid #ffffff;
     border-radius: 25px;
     padding: 50px;
     box-shadow: 
-        0 0 20px rgba(157, 78, 221, 0.3),
+        0 0 20px rgba(255, 255, 255, 0.3),
         0 8px 32px rgba(0, 0, 0, 0.5);
     flex: 1;
     margin-bottom: 30px;
@@ -152,12 +152,12 @@ header::before {
 .neon-label {
     display: block;
     margin-bottom: 15px;
-    color: #e0aaff;
+    color: #ffffff;
     font-weight: 600;
     font-size: 1.2rem;
     text-shadow: 
-        0 0 10px rgba(224, 170, 255, 0.8),
-        0 0 20px rgba(224, 170, 255, 0.4);
+        0 0 10px rgba(255, 255, 255, 0.8),
+        0 0 20px rgba(255, 255, 255, 0.4);
     letter-spacing: 1px;
     position: relative;
     animation: labelPulse 4s ease-in-out infinite alternate;
@@ -169,7 +169,7 @@ header::before {
     left: -25px;
     top: 50%;
     transform: translateY(-50%);
-    color: #9d4edd;
+    color: #ffffff;
     font-size: 0.8rem;
     animation: labelArrow 2s ease-in-out infinite;
 }
@@ -188,7 +188,7 @@ header::before {
     width: 100%;
     padding: 20px;
     background: #000000;
-    border: 2px solid #9d4edd;
+    border: 2px solid #ffffff;
     border-radius: 15px;
     color: #ffffff;
     font-size: 1.1rem;
@@ -199,8 +199,8 @@ header::before {
 
 .neon-input:focus {
     outline: none;
-    border-color: #c77dff;
-    box-shadow: 0 0 15px rgba(157, 78, 221, 0.5);
+    border-color: #e0e0e0;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
 }
 
 .neon-input::placeholder {
@@ -210,7 +210,7 @@ header::before {
 }
 
 .neon-input:focus::placeholder {
-    color: rgba(157, 78, 221, 0.6);
+    color: rgba(255, 255, 255, 0.6);
 }
 
 /* Select dropdown styling */
@@ -218,13 +218,13 @@ header::before {
 select.neon-input {
     background: #000000;
     color: #ffffff;
-    border: 2px solid #9d4edd;
+    border: 2px solid #ffffff;
     border-radius: 15px;
     padding: 20px;
     font-size: 1.1rem;
     font-family: 'Exo 2', sans-serif;
     appearance: none;
-    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%239d4edd' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6,9 12,15 18,9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23ffffff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6,9 12,15 18,9'%3e%3c/polyline%3e%3c/svg%3e");
     background-repeat: no-repeat;
     background-position: right 15px center;
     background-size: 20px;
@@ -234,8 +234,8 @@ select.neon-input {
 .neon-input select:focus,
 select.neon-input:focus {
     outline: none;
-    border-color: #c77dff;
-    box-shadow: 0 0 15px rgba(157, 78, 221, 0.5);
+    border-color: #e0e0e0;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
 }
 
 /* Select option styling */
@@ -250,23 +250,23 @@ select.neon-input option {
 .neon-input option:hover,
 select.neon-input option:hover {
     background: #1a1a1a;
-    color: #9d4edd;
+    color: #ffffff;
 }
 
 .neon-input option:checked,
 select.neon-input option:checked {
-    background: #9d4edd;
+    background: #333333;
     color: #ffffff;
 }
 
 .neon-button {
     width: 100%;
     padding: 25px;
-    background: linear-gradient(45deg, #9d4edd, #c77dff, #ff6b9d, #9d4edd);
+    background: linear-gradient(45deg, #ffffff, #e0e0e0, #cccccc, #ffffff);
     background-size: 300% 300%;
     border: none;
     border-radius: 20px;
-    color: #ffffff;
+    color: #000000;
     font-size: 1.3rem;
     font-weight: 700;
     font-family: 'Orbitron', monospace;
@@ -278,9 +278,9 @@ select.neon-input option:checked {
     overflow: hidden;
     animation: buttonGradient 3s ease infinite;
     box-shadow: 
-        0 0 15px rgba(157, 78, 221, 0.3),
+        0 0 15px rgba(255, 255, 255, 0.3),
         0 8px 25px rgba(0, 0, 0, 0.3),
-        inset 0 0 10px rgba(255, 255, 255, 0.05);
+        inset 0 0 10px rgba(0, 0, 0, 0.05);
 }
 
 .neon-button::before {
@@ -290,7 +290,7 @@ select.neon-input option:checked {
     left: -100%;
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    background: linear-gradient(90deg, transparent, rgba(0, 0, 0, 0.2), transparent);
     transition: left 0.6s ease;
 }
 
@@ -307,11 +307,11 @@ select.neon-input option:checked {
 .neon-button:hover {
     transform: translateY(-4px) scale(1.02);
     box-shadow: 
-        0 0 25px rgba(157, 78, 221, 0.4),
-        0 0 50px rgba(157, 78, 221, 0.2),
+        0 0 25px rgba(255, 255, 255, 0.4),
+        0 0 50px rgba(255, 255, 255, 0.2),
         0 12px 35px rgba(0, 0, 0, 0.4),
-        inset 0 0 15px rgba(255, 255, 255, 0.1);
-    background: linear-gradient(45deg, #c77dff, #ff6b9d, #9d4edd, #c77dff);
+        inset 0 0 15px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(45deg, #e0e0e0, #ffffff, #cccccc, #e0e0e0);
 }
 
 .neon-button:hover::before {
@@ -321,7 +321,7 @@ select.neon-input option:checked {
 .neon-button:active {
     transform: translateY(-2px) scale(0.98);
     box-shadow: 
-        0 0 40px rgba(157, 78, 221, 0.6),
+        0 0 40px rgba(255, 255, 255, 0.6),
         0 6px 20px rgba(0, 0, 0, 0.3);
 }
 
@@ -346,8 +346,8 @@ select.neon-input option:checked {
     width: 80px;
     height: 80px;
     border: 4px solid transparent;
-    border-top: 4px solid #9d4edd;
-    border-right: 4px solid #c77dff;
+    border-top: 4px solid #ffffff;
+    border-right: 4px solid #e0e0e0;
     border-radius: 50%;
     margin: 0 auto 30px;
     position: relative;
@@ -364,7 +364,7 @@ select.neon-input option:checked {
     right: -8px;
     bottom: -8px;
     border: 2px solid transparent;
-    border-top: 2px solid rgba(157, 78, 221, 0.3);
+    border-top: 2px solid rgba(255, 255, 255, 0.3);
     border-radius: 50%;
     animation: spin 2s linear infinite reverse;
 }
@@ -377,7 +377,7 @@ select.neon-input option:checked {
     transform: translate(-50%, -50%);
     width: 20px;
     height: 20px;
-    background: radial-gradient(circle, #9d4edd, transparent);
+    background: radial-gradient(circle, #ffffff, transparent);
     border-radius: 50%;
     animation: innerPulse 1s ease-in-out infinite alternate;
 }
@@ -390,11 +390,11 @@ select.neon-input option:checked {
 @keyframes pulse {
     0%, 100% { 
         transform: scale(1);
-        box-shadow: 0 0 20px rgba(157, 78, 221, 0.3);
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
     }
     50% { 
         transform: scale(1.1);
-        box-shadow: 0 0 40px rgba(157, 78, 221, 0.6);
+        box-shadow: 0 0 40px rgba(255, 255, 255, 0.6);
     }
 }
 
@@ -420,15 +420,15 @@ select.neon-input option:checked {
 }
 
 .success-message {
-    color: #00ff88;
+    color: #ffffff;
     text-align: center;
     font-size: 1.6rem;
     font-weight: 700;
     font-family: 'Orbitron', monospace;
     margin-bottom: 30px;
     text-shadow: 
-        0 0 20px rgba(0, 255, 136, 0.8),
-        0 0 40px rgba(0, 255, 136, 0.4);
+        0 0 20px rgba(255, 255, 255, 0.8),
+        0 0 40px rgba(255, 255, 255, 0.4);
     animation: 
         successGlow 2s ease-in-out,
         successPulse 3s ease-in-out infinite;
@@ -442,7 +442,7 @@ select.neon-input option:checked {
     top: 50%;
     transform: translateY(-50%);
     font-size: 1.2rem;
-    color: #00ff88;
+    color: #ffffff;
     animation: checkBounce 1s ease-in-out infinite;
 }
 
@@ -463,11 +463,11 @@ select.neon-input option:checked {
 
 .result-box {
     background: #000000;
-    border: 2px solid #9d4edd;
+    border: 2px solid #ffffff;
     border-radius: 20px;
     padding: 30px;
     position: relative;
-    box-shadow: 0 0 20px rgba(157, 78, 221, 0.3);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
 }
 
 
@@ -475,7 +475,7 @@ select.neon-input option:checked {
     width: 100%;
     height: 140px;
     background: #000000;
-    border: 2px solid #9d4edd;
+    border: 2px solid #ffffff;
     border-radius: 15px;
     padding: 20px;
     color: #ffffff;
@@ -488,14 +488,14 @@ select.neon-input option:checked {
 
 .result-textarea:focus {
     outline: none;
-    border-color: #c77dff;
-    box-shadow: 0 0 15px rgba(157, 78, 221, 0.5);
+    border-color: #e0e0e0;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
 }
 
 .copy-button {
     width: 100%;
     padding: 18px;
-    background: linear-gradient(45deg, #00ff88, #00cc6a, #00ff88);
+    background: linear-gradient(45deg, #ffffff, #e0e0e0, #ffffff);
     background-size: 200% 200%;
     border: none;
     border-radius: 15px;
@@ -511,7 +511,7 @@ select.neon-input option:checked {
     text-transform: uppercase;
     letter-spacing: 1px;
     box-shadow: 
-        0 0 20px rgba(0, 255, 136, 0.4),
+        0 0 20px rgba(255, 255, 255, 0.4),
         0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
@@ -522,7 +522,7 @@ select.neon-input option:checked {
     left: -100%;
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    background: linear-gradient(90deg, transparent, rgba(0, 0, 0, 0.2), transparent);
     transition: left 0.6s ease;
 }
 
@@ -539,8 +539,8 @@ select.neon-input option:checked {
 .copy-button:hover {
     transform: translateY(-3px) scale(1.02);
     box-shadow: 
-        0 0 30px rgba(0, 255, 136, 0.6),
-        0 0 60px rgba(0, 255, 136, 0.3),
+        0 0 30px rgba(255, 255, 255, 0.6),
+        0 0 60px rgba(255, 255, 255, 0.3),
         0 8px 25px rgba(0, 0, 0, 0.3);
 }
 
@@ -578,7 +578,7 @@ footer::before {
     transform: translateX(-50%);
     width: 300px;
     height: 2px;
-    background: linear-gradient(90deg, transparent, #9d4edd, #c77dff, #9d4edd, transparent);
+    background: linear-gradient(90deg, transparent, #ffffff, #e0e0e0, #ffffff, transparent);
     border-radius: 1px;
     animation: footerGlow 4s ease-in-out infinite;
 }
@@ -597,13 +597,13 @@ footer::before {
 }
 
 .server-text {
-    color: #c77dff;
+    color: #ffffff;
     font-size: 1.3rem;
     font-weight: 600;
     font-family: 'Orbitron', monospace;
     text-shadow: 
-        0 0 15px rgba(199, 125, 255, 0.8),
-        0 0 30px rgba(199, 125, 255, 0.4);
+        0 0 15px rgba(255, 255, 255, 0.8),
+        0 0 30px rgba(255, 255, 255, 0.4);
     margin: 0;
     letter-spacing: 2px;
     animation: serverTextGlow 3s ease-in-out infinite alternate;
@@ -748,7 +748,7 @@ footer::before {
     }
 }
 
-/* 3D Purple Stars Animation */
+/* 3D White Stars Animation */
 .stars-container {
     position: fixed;
     top: 0;
@@ -760,8 +760,8 @@ footer::before {
     overflow: hidden;
     perspective: 2000px;
     background: 
-        radial-gradient(circle at 20% 20%, rgba(157, 78, 221, 0.01) 0%, transparent 50%),
-        radial-gradient(circle at 80% 80%, rgba(199, 125, 255, 0.01) 0%, transparent 50%),
+        radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.01) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(200, 200, 200, 0.01) 0%, transparent 50%),
         radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.005) 0%, transparent 50%);
     animation: starsBackground 20s ease-in-out infinite;
 }
@@ -795,8 +795,8 @@ footer::before {
     height: 0;
     border-left: 2px solid transparent;
     border-right: 2px solid transparent;
-    border-bottom: 4px solid #9d4edd;
-    filter: drop-shadow(0 0 8px #9d4edd);
+    border-bottom: 4px solid #ffffff;
+    filter: drop-shadow(0 0 8px #ffffff);
     animation: twinkle 3s ease-in-out infinite alternate;
 }
 
@@ -810,8 +810,8 @@ footer::before {
     height: 0;
     border-left: 2px solid transparent;
     border-right: 2px solid transparent;
-    border-bottom: 4px solid #c77dff;
-    filter: drop-shadow(0 0 8px #c77dff);
+    border-bottom: 4px solid #e0e0e0;
+    filter: drop-shadow(0 0 8px #e0e0e0);
     animation: twinkle 3s ease-in-out infinite alternate reverse;
 }
 
@@ -823,11 +823,11 @@ footer::before {
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 12px;
-    color: #9d4edd;
+    color: #ffffff;
     text-shadow: 
-        0 0 10px #9d4edd,
-        0 0 20px #9d4edd,
-        0 0 30px #9d4edd;
+        0 0 10px #ffffff,
+        0 0 20px #ffffff,
+        0 0 30px #ffffff;
     animation: twinkle 2.5s ease-in-out infinite alternate;
 }
 
@@ -844,11 +844,11 @@ footer::before {
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 14px;
-    color: #c77dff;
+    color: #e0e0e0;
     text-shadow: 
-        0 0 10px #c77dff,
-        0 0 20px #c77dff,
-        0 0 30px #c77dff;
+        0 0 10px #e0e0e0,
+        0 0 20px #e0e0e0,
+        0 0 30px #e0e0e0;
     animation: twinkle 2s ease-in-out infinite alternate;
 }
 
@@ -915,13 +915,13 @@ footer::before {
 .star.small::before {
     border-left: 1px solid transparent;
     border-right: 1px solid transparent;
-    border-bottom: 2px solid #9d4edd;
+    border-bottom: 2px solid #ffffff;
 }
 
 .star.small::after {
     border-left: 1px solid transparent;
     border-right: 1px solid transparent;
-    border-bottom: 2px solid #c77dff;
+    border-bottom: 2px solid #e0e0e0;
 }
 
 .star.medium {
@@ -935,13 +935,13 @@ footer::before {
 .star.large::before {
     border-left: 3px solid transparent;
     border-right: 3px solid transparent;
-    border-bottom: 6px solid #9d4edd;
+    border-bottom: 6px solid #ffffff;
 }
 
 .star.large::after {
     border-left: 3px solid transparent;
     border-right: 3px solid transparent;
-    border-bottom: 6px solid #c77dff;
+    border-bottom: 6px solid #e0e0e0;
 }
 
 .star.extra-large {
@@ -951,13 +951,13 @@ footer::before {
 .star.extra-large::before {
     border-left: 4px solid transparent;
     border-right: 4px solid transparent;
-    border-bottom: 8px solid #9d4edd;
+    border-bottom: 8px solid #ffffff;
 }
 
 .star.extra-large::after {
     border-left: 4px solid transparent;
     border-right: 4px solid transparent;
-    border-bottom: 8px solid #c77dff;
+    border-bottom: 8px solid #e0e0e0;
 }
 
 
@@ -971,10 +971,10 @@ footer::before {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #9d4edd;
+    background: #ffffff;
     border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #c77dff;
+    background: #e0e0e0;
 }
